@@ -4,6 +4,7 @@ An ever-growing list of object-oriented, data structure, and algorithm focused r
 A brief look at the sections to be covered:
 
   1) Data Structures
+  
       - Trees
       - Lists/Hash Maps
       - Graphs
