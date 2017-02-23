@@ -1,1 +1,0 @@
-A binary tree where the nodes are ordered such that all the elements to the left of the node are less than and all the elements to the right of the node are greater than or equal to that of the value of the parent node. BSTs are fast at insertion and searching. 
