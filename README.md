@@ -10,9 +10,18 @@ A brief look at the sections to be covered (currently in progress):
       - Stacks/Queues
       
   * Searching Algorithms
-  
+      - Binary
+      - Interpolation
+      
   * Sorting Algorithms
-  
+      - Selection
+      - Insertion
+      - Merge
+      - Quick
+      
   * Recursion
   
   * OOP Concepts
+      - Polymorphism
+      - Inheritance 
+      - Encapsulation
