@@ -3,14 +3,14 @@
 This folder focuses on the various binary tree implementations. A **binary tree** is made up of nodes where each node contains a "left" and "right" pointer, and data element. The "root" pointer points to the topmost node in the tree.
 
 
-###Binary Search Trees
+##Binary Search Trees
 
 A binary tree where the nodes are ordered such that all the elements to the left of the parent node are less than and all the elements to the right of the parent node are greater than or equal to that of the value of the parent node.
 
 #####Pros:
 * Fast insert, delete, and search (on average)
 
-###Heaps
+##Heaps
 
 Heaps, or priority queues, are partially sorted binary trees where the value of the root is greater than that of the child (max heap) or the root is less than that of the child (min heap).
 
@@ -23,7 +23,7 @@ When popping from the heap, the root node is removed and replaced with the last 
 ####Heapify: 
 Heapify is the process of converting a binary tree to a heap structure. The process starts at the lowest (furthest in the tree) parent node. The value at the node is compared with its children and swapped if necessary. Move from parent to parent until the heap property holds throughout the tree.
 
-###AVL Trees
+##AVL Trees
 
 #####Pros:
 * Guaranteed fast lookup
@@ -32,5 +32,6 @@ Heapify is the process of converting a binary tree to a heap structure. The proc
 
 #####Cons:
 * Slow insert, delete
+
 ##Red-Black Trees
 
