@@ -8,8 +8,11 @@ A brief look at the sections to be covered:
       - Lists/Hash Maps
       - Graphs
       - Stacks/Queues
-  
+      
   * Searching Algorithms
+  
   * Sorting Algorithms
+  
   * Recursion
+  
   * OOP Concepts
