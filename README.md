@@ -18,10 +18,10 @@ A brief look at the sections to be covered (currently in progress):
       - Insertion
       - Merge
       - Quick
-      
-  * Recursion
   
   * OOP Concepts
       - Polymorphism
       - Inheritance 
       - Encapsulation
+
+  * Recursion
