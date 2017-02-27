@@ -22,12 +22,7 @@ To delete an element in the tree, you must first search for the node to remove. 
       1. Node to be removed has no children  -> algorithm sets the link of the parent to NULL and deletes the requested node.
       2. Node to be removed has one child    -> algorithm cuts node from the tree and links single child with parent of the removed node.
       3. Node to be removed has two children -> find the minumum value in the corresponding subtree. Replace value of the node to be removed with found minimum. Now, the subtree contains a duplicate. Remove the node on subtree to remove the duplicate.
-      
-#####Pros:
-
-#####Cons:
-* The shape of the tree depends on the order of insertions.
-* When inserting or searching for an element, the key of each visited node has to be compared with the key of the element to be inserted/found. Keys may be long and hte run time may increase much. To improve the efficiency of the BST, keeping the tree balanced (AVL trees) or reduce the time for key comparison (Radix trees).
+     
 
 ##Heaps
 
@@ -44,14 +39,6 @@ Heapify is the process of converting a binary tree to a heap structure. The proc
 
 
 ##AVL Trees
-
-#####Pros:
-* Guaranteed fast lookup
-* Strictly balanced
-* Self-balancing by height of tree
-
-#####Cons:
-* Slow insert, delete
 
 
 ##Red-Black Trees
