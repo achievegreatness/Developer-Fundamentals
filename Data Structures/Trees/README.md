@@ -45,4 +45,4 @@ Heapify is the process of converting a binary tree to a heap structure. The proc
 
 
 ##Tree Operations
-![trees](https://cloud.githubusercontent.com/assets/25939990/23381559/ca69843c-fcf3-11e6-81cf-c2d20e2e15d4.png)
+![trees](https://cloud.githubusercontent.com/assets/25939990/23381739/68971250-fcf4-11e6-837d-81a64a932c44.png)
