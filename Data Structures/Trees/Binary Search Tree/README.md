@@ -18,3 +18,94 @@ To delete an element in the tree, you must first search for the node to remove. 
 2. Node to be removed has one child    -> algorithm cuts node from the tree and links single child with parent of the removed node.
 3. Node to be removed has two children -> find the minumum value in the corresponding subtree. Replace value of the node to be removed with found minimum. 
    Now, the subtree contains a duplicate. Remove the node on subtree to remove the duplicate.
+
+
+###C++ Implementation:
+
+```C++
+struct node
+{
+  int key_value;
+  node *left;
+  node *right;
+};
+
+class btree
+{
+    public:
+        btree();
+        ~btree();
+        
+        void destroy_tree(node *leaf);
+        void insert(int key, node *leaf);
+        node *search(int key, node *leaf);
+    
+    private:
+        node *root;
+};
+
+btree::btree()
+{
+  root=NULL;
+}
+
+void btree::destroy_tree(node *leaf)
+{
+  if(leaf!=NULL)
+  {
+    destroy_tree(leaf->left);
+    destroy_tree(leaf->right);
+    delete leaf;
+  }
+}
+
+void btree::insert(int key, node *leaf)
+{
+  if(root == NULL)
+  {
+    root=new node;
+    root->key_value=key;
+    root->left=NULL;
+    root->right=NULL;
+  }
+  if(key< leaf->key_value)
+  {
+    if(leaf->left!=NULL)
+     insert(key, leaf->left);
+    else
+    {
+      leaf->left=new node;
+      leaf->left->key_value=key;
+      leaf->left->left=NULL;    //Sets the left child of the child node to null
+      leaf->left->right=NULL;   //Sets the right child of the child node to null
+    }  
+  }
+  else if(key>=leaf->key_value)
+  {
+    if(leaf->right!=NULL)
+      insert(key, leaf->right);
+    else
+    {
+      leaf->right=new node;
+      leaf->right->key_value=key;
+      leaf->right->left=NULL;  //Sets the left child of the child node to null
+      leaf->right->right=NULL; //Sets the right child of the child node to null
+    }
+  }
+}
+
+node *btree::search(int key, node *leaf)
+{
+  if(leaf!=NULL)
+  {
+    if(key==leaf->key_value)
+      return leaf;
+    if(key<leaf->key_value)
+      return search(key, leaf->left);
+    else
+      return search(key, leaf->right);
+  }
+  else return NULL;
+}
+
+```
