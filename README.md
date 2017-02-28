@@ -25,3 +25,6 @@ A brief look at the sections to be covered (currently in progress):
       - Encapsulation
 
   * Recursion
+
+Resources:
+https://www.mtu.edu/career/students/toolbox/interviews/prepare.pdf
